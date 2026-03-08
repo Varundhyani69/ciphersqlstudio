@@ -7,12 +7,14 @@ import assignmentRoutes from './routes/assignmentRoutes.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import queryRoutes from './routes/queryRoutes.js';
 import hintRoutes from './routes/hintRoutes.js';
-import pool from "./db/postgres.js";
 const app = express();
 const PORT = process.env.PORT;
 console.log(process.env.GEMINI_API_KEY);
 connectDB();
-app.use(cors());
+app.use(cors({
+    origin: FRONTEND_ORIGIN,
+    credentials: true
+}));
 app.use(express.json());
 app.use('/api/assignments', assignmentRoutes);
 app.use("/api/query", queryRoutes);
