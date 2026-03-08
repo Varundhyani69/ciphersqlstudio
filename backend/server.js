@@ -12,7 +12,7 @@ const PORT = process.env.PORT;
 console.log(process.env.GEMINI_API_KEY);
 connectDB();
 app.use(cors({
-    origin: FRONTEND_ORIGIN,
+    origin: process.env.FRONTEND_ORIGIN,
     credentials: true
 }));
 app.use(express.json());
