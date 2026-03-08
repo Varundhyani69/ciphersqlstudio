@@ -33,7 +33,7 @@ function AssignmentsPage() {
         <div className="min-h-screen bg-gray-50 p-8">
 
             <div className="max-w-5xl mx-auto">
-
+                <h1><b>NOTE: </b>It is deployed on render's free tier web service which might went to sleep due to inactivity so if the assignments are not loading kindly stay on page and referesh after 20-30 seconds</h1>
                 <h1 className="text-3xl font-bold mb-8">
                     SQL Practice
                 </h1>

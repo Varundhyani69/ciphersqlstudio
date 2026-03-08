@@ -7,6 +7,10 @@ The goal of this project was to build a full-stack application that combines dat
 
 ---
 
+## Deployed URL
+https://ciphersqlstudio-se1a.onrender.com/
+
+
 ## Features
 
 - Browse SQL assignments
